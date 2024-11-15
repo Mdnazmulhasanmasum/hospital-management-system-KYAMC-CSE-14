@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+
+
+
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>    Login
+ | ZAMS</title>
+    <meta name="description" content="Hospital management system">
+    <meta name="keyword" content="hospital,doctor,patient,fever,MD,MS,MBBS">
+    <link rel="icon" href="../infyhms.sgp1.cdn.digitaloceanspaces.com/639/Graphics.png" type="image/png">
+    <link rel="canonical" href="https://hms.infyom.com/" />
+    <link rel="stylesheet" href="https://hms.infyom.com/favicon.ico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" />
+
+    <link rel="stylesheet" type="text/css" href="https://hms.infyom.com/assets/css/third-party.css">
+    <link rel="stylesheet" type="text/css" href="https://hms.infyom.com/assets/css/style.css">
+    <link href="https://hms.infyom.com/assets/css/custom-auth.css?id=df9be2c268bab8359b38" rel="stylesheet" type="text/css" />
+    
+    <!-- CSS Libraries -->
+        <!-- Scripts -->
+    <script src="https://hms.infyom.com/assets/js/third-party.js"></script>
+    <script src="https://hms.infyom.com/messages.js"></script>
+    <script src="https://hms.infyom.com/js/pages.js"></script>
+        <script src="https://hms.infyom.com/assets/js/auto_fill/auto_fill.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.alert').delay(5000).slideUp(300)
+        });
+
+        $(document).on('click', '.language-select', function() {
+            let languageName = $(this).data('id');
+            $.ajax({
+                type: 'get',
+                url: 'set-language',
+                data: {
+                    languageName: languageName
+                },
+                success: function() {
+                    location.reload();
+                },
+            });
+        });
+    </script>
+</head>
+
+<body
+    class="header-fixed header-tablet-and-mobile-fixed toolbar-enabled toolbar-fixed toolbar-tablet-and-mobile-fixed aside-enabled aside-fixed">
+    <div class="d-flex flex-column flex-root">
+        <div
+            class="d-flex flex-column flex-column-fluid bgi-position-y-bottom position-x-center bgi-no-repeat bgi-size-contain bgi-attachment-fixed authImage">
+                <!--begin::Authentication - Sign-in -->
+        <ul class="nav nav-pills" style="justify-content: flex-end; cursor: pointer">
+        <li class="nav-item dropdown">
+            <a class="btn btn-primary w-150px mb-5 indicator m-3" data-bs-toggle="dropdown" href="javascript:void(0)"
+                role="button" aria-expanded="false">English</a>
+            <ul class="dropdown-menu w-150px">
+                                    <li class=""><a
+                            class="dropdown-item  px-5 language-select text-dark"
+                            data-id="ar">Arabic</a>
+                    </li>
+                                    <li class=""><a
+                            class="dropdown-item  px-5 language-select text-dark"
+                            data-id="zh">Chinese</a>
+                    </li>
+                                    <li class="active"><a
+                            class="dropdown-item  px-5 language-select bg-primary text-white"
+                            data-id="en">English</a>
+                    </li>
+                                    <li class=""><a
+                            class="dropdown-item  px-5 language-select text-dark"
+                            data-id="fr">French</a>
+                    </li>
+                                    <li class=""><a
+                            class="dropdown-item  px-5 language-select text-dark"
+                            data-id="de">German</a>
+                    </li>
+                                    <li class=""><a
+                            class="dropdown-item  px-5 language-select text-dark"
+                            data-id="pt">Portuguese</a>
+                    </li>
+                                    <li class=""><a
+                            class="dropdown-item  px-5 language-select text-dark"
+                            data-id="ru">Russian</a>
+                    </li>
+                                    <li class=""><a
+                            class="dropdown-item  px-5 language-select text-dark"
+                            data-id="es">Spanish</a>
+                    </li>
+                                    <li class=""><a
+                            class="dropdown-item  px-5 language-select text-dark"
+                            data-id="tr">Turkish</a>
+                    </li>
+                            </ul>
+        </li>
+    </ul>
+
+    <div class="d-flex flex-column flex-column-fluid align-items-center justify-content-top p-4">
+        <div class="col-12 text-center">
+            <a href="./Home.html" class="image mb-7 mb-sm-10" data-turbo="false">
+                <img alt="Logo" src="./Images/v987-18a-removebg-preview.png" class="img-fluid logo-fix-size">
+            </a>
+        </div>
+        <div class="width-540">
+                                </div>
+        <div class="bg-white rounded-15 shadow-md width-540 px-5 px-sm-7 py-10 mx-auto">
+            <h1 class="text-center mb-7">Sign In</h1>
+            <form method="post" action="https://hms.infyom.com/login">
+                <input type="hidden" name="_token" value="OIygnLor4mIIbwJ5C2puT9dhVfmbtEGCfXJ9mjOU" autocomplete="off">                <div class="mb-sm-7 mb-4">
+                    <label for="email" class="form-label">
+                        Email:<span class="required"></span>
+                    </label>
+                    <input name="email" type="email" class="form-control" id="email" aria-describedby="emailHelp"
+                        required placeholder="Email"
+                        value="">
+                </div>
+                <div class="mb-sm-7 mb-4">
+                    <div class="d-flex justify-content-between">
+                        <label for="password" class="form-label">Password:<span
+                                class="required"></span></label>
+                        <a href="" class="link-info fs-6 text-decoration-none">
+                            Forgot Password ?
+                        </a>
+                    </div>
+                    <input name="password" type="password" class="form-control" id="password" required
+                        placeholder="Password"
+                        value="">
+                </div>
+                <div class="mb-sm-7 mb-4 form-check">
+                    <input type="checkbox" class="form-check-input" id="remember_me" name="remember" checked>
+                    <label class="form-check-label" for="remember_me">Remember Me</label>
+                </div>
+                <div class="d-grid" data-turbo="false">
+                    <button type="submit" class="btn btn-primary">Login</button>
+                </div>
+                <div class="d-flex align-items-center mb-10 mt-4">
+                    <span class="text-gray-700 me-2">New Here?</span>
+                    <a href="" class="link-info fs-6 text-decoration-none">
+                        Create an Account
+                    </a>
+                </div>
+            </form>
+        </div>
+        <div class="container">
+    <div class="row">
+        <div class="col-12">
+            <div class="row d-flex justify-content-center">
+                <div class="col-lg-9 col-12 all-btns my-5">
+                    <div class="row">
+                        <div class="col-md-4 col-lg-3 mb-4 col-6">
+                            <a class="btn superadmin-login">super admin</a>
+                        </div>
+                        <div class="col-md-4 col-lg-3 mb-4 col-6">
+                            <a class="btn doctor-login">doctor</a>
+                        </div>
+                        <div class="col-md-4 col-lg-3 mb-4 col-6">
+                            <a class="btn accountant-login">accountant</a>
+                        </div>
+                        <div class="col-md-4 col-lg-3 mb-4 col-6">
+                            <a class="btn cas-handler-login">case handler</a>
+                        </div>
+                        <div class="col-md-4 col-lg-3 mb-4 col-6">
+                            <a class="btn receptionist-login">receptionist</a>
+                        </div>
+                        <div class="col-md-4 col-lg-3 mb-4 col-6">
+                            <a class="btn pharmacist-login">pharmacist</a>
+                        </div>
+                        <div class="col-md-4 col-lg-3 mb-4 col-6">
+                            <a class="btn lab-technician-login">lab technician</a>
+                        </div>
+                        <div class="col-md-4 col-lg-3 mb-4 col-6">
+                            <a class="btn nurse-login">nurse</a>
+                        </div>
+                        <div class="col-md-4 col-lg-3 mb-4 col-6">
+                            <a class="btn patient-login">patient</a>
+                        </div>
+                        <div class="col-md-4 col-lg-3 mb-4 col-6">
+                            <a href="https://hms.infyom.com/" class="btn front-site">front site</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    </div>
+        </div>
+    </div>
+    <input class="userCurrentLanguage" name="userCurrentLanguage" type="hidden" value="en">
+    <input class="invalidNumber" name="invalidNumber" type="hidden" value="Invalid number">
+    <input class="invalidCountryNumber" name="invalidCountryNumber" type="hidden" value="Invalid country code">
+    <input class="tooShort" name="tooShort" type="hidden" value="Too short">
+    <input class="tooLong" name="tooLong" type="hidden" value="Too long">
+    <input class="invalidNumber" name="invalidNumber" type="hidden" value="Invalid number">
+    <input class="invalidNumber" name="invalidNumber" type="hidden" value="Invalid number">
+</body>
+
+
+
+</html>
