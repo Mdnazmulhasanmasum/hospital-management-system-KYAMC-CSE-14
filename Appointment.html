@@ -203,25 +203,25 @@
                                     </li>
                                     <li class="nav-item ">
                                         <a class="nav-link "
-                                            href="">
+                                            href="./Working Hours.html">
                                             Working Hours
                                         </a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link "
-                                            href="">
+                                            href="./Testimonials.html">
                                             Testimonials
                                         </a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link "
-                                            href="">
+                                            href="./Terms of Service.html">
                                             Terms of Service
                                         </a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link "
-                                            href="">
+                                            href="./Privacy Policy.html">
                                             Privacy Policy
                                         </a>
                                     </li>
@@ -428,28 +428,28 @@
             </div>
         </div>
     </div>
-    <div class="col-lg-4 col-md-6 patient-email-div">
+    <div class="col-lg-4 col-md-6 ">
         <div class="appointment-form__input-block">
-            <label for="email" class="form-label">Email :
+            <label for="appointment_charge" class="form-label">Apointment Charge
                 <span class="required">*</span>
             </label>
-            <input class="form-control old-patient-email" placeholder="Enter your email" autocomplete="off" required name="email" type="email">
+            <input class="form-control" placeholder="Appointment Charge" id="appointmentCharge" readonly="readonly" name="appointment_charge" type="text">
         </div>
     </div>
-    <div class="col-lg-4 col-md-6 password-div">
+    <div class="col-lg-4 col-md-6 ">
         <div class="appointment-form__input-block">
-            <label for="password" class="form-label">Password :<span
-                    class="required">*</span></label>
-            <input class="form-control" placeholder="Enter your Password" required min="6" max="10" id="password" name="password" type="password" value="">
+            <label for="payment_mode" class="form-label">Payment Mode :<span
+                class="required paymentMode d-none">*</span></label>
+                <select class="selectized appointmentPaymentMode" autocomplete="off" id="appointmentPaymentModeId" name="payment_mode"><option selected="selected" value="">Payment Mode</option><option value="1">Cash</option><option value="2">Cheque</option><option value="6">Other</option><option value="5">Paypal</option></select>
         </div>
     </div>
-    <div class="col-lg-4 col-md-6 confirm-password-div">
+    <!--div class="col-lg-4 col-md-6 confirm-password-div">
         <div class="appointment-form__input-block">
             <label for="confirmPassword" class="form-label">Confirm Password :<span
                     class="required">*</span></label>
             <input class="form-control" placeholder="Enter Confirm Password" required min="6" max="10" id="confirmPassword" name="password_confirmation" type="password" value="">
         </div>
-    </div>
+    </div!-->
     <div class="col-lg-4 col-md-6">
         <div class="appointment-form__input-block">
             <label for="selectDepartment" class="form-label">Doctor Department :<span
@@ -479,15 +479,14 @@
     </div>
     <div class="col-lg-6 web-appointment-charge d-none">
         <div class="appointment-form__input-block">
-            <label for="appointment_charge" class="form-label">Appointment Charge :</label>
-            <input class="form-control" placeholder="Appointment Charge" id="appointmentCharge" readonly="readonly" name="appointment_charge" type="text">
+            
+            
         </div>
     </div>
     <div class="col-lg-6 paymentType d-none">
         <div class="appointment-form__input-block">
-            <label for="payment_mode" class="form-label">Payment Mode :<span
-                    class="required paymentMode d-none">*</span></label>
-            <select class="selectized appointmentPaymentMode" autocomplete="off" id="appointmentPaymentModeId" name="payment_mode"><option selected="selected" value="">Payment Mode</option><option value="1">Cash</option><option value="2">Cheque</option><option value="6">Other</option><option value="5">Paypal</option></select>
+           
+            
         </div>
     </div>
     <div class="col-lg-12">
@@ -518,9 +517,11 @@
         </div>
     </div>
     <div class="col-lg-12 text-center mt-4">
-        <button type="submit" class="btn btn-primary custom-btn-lg"
+        <a href="./LogIn.html">
+            <button type="submit" class="btn btn-primary custom-btn-lg"
             id="webAppointmentBtnSave">Save</button>
     </div>
+        </a>
 </div>
                 </form>
             </div>
@@ -535,9 +536,9 @@
                         <div
                             class="text-lg-start text-center mb-lg-0 mb-5">
                             <h2 class="mb-3">
-                                ayouu</h2>
+                                MUSFIQ</h2>
                             <p class="mb-0">
-                                Healthcare has a robust presence across the healthcare ecosystem. From routine wellness &amp; preventive health care to innovative life-saving treatments and diagnostic services, We touched more than many lives from many countries, offering the best clinical outcomes.
+                                ZAMS Healthcare has a robust presence across the healthcare ecosystem. From routine wellness &amp; preventive health care to innovative life-saving treatments and diagnostic services, We touched more than many lives from many countries, offering the best clinical outcomes.
                             </p>
                         </div>
                     </div>
@@ -642,7 +643,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="./" class=" text-decoration-none mb-3 d-block text-white">
+                        <a href="./Contact.html" class=" text-decoration-none mb-3 d-block text-white">
                             Contact
                         </a>
                     </li>
